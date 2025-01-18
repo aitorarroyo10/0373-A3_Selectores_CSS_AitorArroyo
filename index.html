@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Regla nª1: Aplicada al tipo de fuente del documento.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <!--Fin de la regla nª1.-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon/css-brands-solid.svg">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>CSS Selectors</title>
+</head>
+
+<!--Regla nª2: Margen a 0 píxeles y relleno a la izquierda y a la derecha del 20%.-->
+<body>
+    <!--Regla nª3: Etiqueta <h1> con texto subrayado, alineado al centro y color cian oscuro.-->
+    <h1>CSS Selectors</h1>
+    <!--Fin de la regla nª3.-->
+    <p>A CSS selector selects the HTML element(s) you want to style.</p>
+    <div class="selectors">
+        <h2>CSS Selectors</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
+        <ul>
+        <!--Regla nª9: Las etiquetas <a> que sean descendientes de alguna etiqueta <li> NO tendrán decoración en el texto-->
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li><a href=https://www.w3schools.com/css/css_combinators.asp>Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+            <li><a href=https://www.w3schools.com/css/css_pseudo_classes.asp>Pseudo-class selectors</a> (select elements based on a certain state)
+            </li>
+            <li><a href=https://www.w3schools.com/css/css_pseudo_elements.asp>Pseudo-elements selectors</a> (select and style a part of an element)</li>
+            <li><a href=https://www.w3schools.com/css/css_attribute_selectors.asp>Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
+        <!--Fin de la regla nª9.-->
+        </ul>
+    </div>
+    <hr>
+
+    <!--Regla nª4: Color de texto de clases h2 "selector" en cian claro.-->
+    <!--Regla nª7: Etiquetas <h2> con clase "selector" y con "id universal", con color de fondo cian oscuro, relleno de 1% y esquinas redondeadas de 5 píxeles.-->
+    <!--Regla nª5: Clase "selectores" con relleno de 5%, rodeada de esquinas redondeadas de 5 píxeles de color cian oscuro.-->
+    <!--Regla nª8: Las etiquetas <span> tendrán grosor de fuente de 900, color de fondo negro y color de texto blanco.-->
+    <h2 class="selector">The CSS <span>element</span> Selector</h2>
+    <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
+    <hr>
+    <h2 class="selector">The CSS <span>id</span> Selector</h2>
+    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+    <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+    <p>To select an element with a specific id, write a hash <span>(#)</span> character, followed by the id of the element.</p>
+    <hr>
+    <h2 class="selector">The CSS <span>class</span> Selector</h2>
+    <p>The class selector selects HTML elements with a specific class attribute.</p>
+    <p>To select elements with a specific class, write a period <span>(.)</span> character, followed by the class name.</p>
+    <hr>
+    <!--Fin de la regla nª4-->
+    <!--Regla nª6: Color de texto de elemento "id" en color amarillo suave.-->
+    <h2 id="universal">The CSS <span>Universal</span> Selector</h2>
+    <!--Fin de la regla nª7.-->
+    <!--Fin de la regla nª6.-->
+    <p>The universal selector <span>(*)</span> selects all HTML elements on the page.</p>
+    <!--Fin de la regla nª8-->
+    <!--Fin de la regla nª5-->
+    <div>
+        <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors. </p>
+    </div>
+    <hr>
+
+    <!--Regla nª11: Las etiquetas <div> que sean descendientes de un elemento con "id gallery", con ancho de 100%.-->
+    <div id="gallery">
+        <div>
+            <!--Regla nª10: Las etiquetas <h3> con color de fondo "rgba(0, 139, 139, 0.529)", relleno de 0.5% y esquinas redondeadas con valor de 5 píxeles-->
+            <h3>CSS Syntax</h3>
+            <!--Regla nª12: Las etiquetas <img> con un ancho de 100%, borde de 1 píxel de color cian oscuro y esquinas redondeadas con de 5 píxeles.-->
+            <img src="./resources/regla_css.jpg" alt="">
+        </div>
+        <div>
+            <h3>All CSS Simple Selectors</h3>
+            <!--Fin de la regla nª10-->
+            <img src="./resources/selectors.png" alt="">
+            <!--Fin de la regla nª12-->
+        </div>
+    </div>
+    <!--Fin de la regla nª11-->
+
+</body>
+<!--Fin de la regla nª2.-->
+</html>

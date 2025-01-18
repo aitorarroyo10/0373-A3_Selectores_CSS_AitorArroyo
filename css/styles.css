@@ -1,0 +1,77 @@
+/* Regla nª1: Cambio de tipografía del documento.*/
+*{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 375;
+  font-style: normal;
+}
+
+/* Regla nª2: El margen del cuerpo/estructura establecido a 0 y relleno tanto a la izquierda como a la derecha al 20%.*/
+body{
+  margin: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+/*Regla nª3: Etiqueta <h1> (título de "CSS Selectors"), con línea debajo, color de texto cian oscuro y alineación del texto en el centro.*/
+h1{
+  text-decoration-line: underline;
+  color: darkcyan;
+  text-align: center;
+}
+
+/* Regla nª4: Color de texto de clases h2 "selector" en cian claro.*/
+.selector{
+  color: lightcyan;
+}
+
+/* Regla nª5: Clase "selectores" con relleno de 5%, rodeada de esquinas redondeadas de 5 píxeles de color cian oscuro.*/
+.selectors{
+  padding: 5%;
+  border: solid darkcyan 1px;
+  border-radius: 5px;
+}
+
+/* Regla nª6: Color de texto de elemento "id" en color amarillo suave.*/
+#universal{
+  color: lightgoldenrodyellow;
+}
+
+/* Regla nª7: Etiquetas <h2> con clase "selector" y con "id universal", con color de fondo cian oscuro, relleno de 1% y esquinas redondeadas de 5 píxeles.*/
+h2.selector, h2#universal{
+  background-color: darkcyan;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+/* Regla nª8: Las etiquetas <span> tendrán grosor de fuente de 900, color de fondo negro y color de texto blanco.*/
+span{
+  font-weight: 900;
+  background-color: black;
+  color: white;
+}
+
+/* Regla nª9: Las etiquetas <a> que sean descendientes de alguna etiqueta <li> NO tendrán decoración en el texto.*/
+li > a{
+  text-decoration: none;
+}
+
+/* Regla nª10: Las etiquetas <h3> con color de fondo "rgba(0, 139, 139, 0.529)", relleno de 0.5% y esquinas redondeadas con valor de 5 píxeles.*/
+h3{
+  background-color: rgba(0, 139, 139, 0.529);
+  padding: 0.5%;
+  border-radius: 5px;
+}
+
+/* Regla nª11: Las etiquetas <div> que sean descendientes de un elemento con "id gallery", con ancho de 100%.*/
+#gallery div{
+  width: 100%;
+}
+
+/* Regla nª12: Las etiquetas <img> con un ancho de 100%, borde de 1 píxel de color cian oscuro y esquinas redondeadas con de 5 píxeles.*/
+img{
+  width: 100%;
+  border: solid darkcyan 1px;
+  border-radius: 5px;
+}
